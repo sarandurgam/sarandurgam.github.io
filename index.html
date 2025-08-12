@@ -1,99 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saran Kumar Durgam | Senior Data Engineer</title>
   <style>
-    body {
+    :root{
+      --bg1:#e0f7fa;
+      --bg2:#ffffff;
+      --ink:#333;
+      --accent:#007acc;
+      --link:#0066cc;
+      --card:#ffffffcc;
+      --border:#e6eef2;
+    }
+    *{box-sizing:border-box}
+    body{
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background: linear-gradient(to right, #e0f7fa, #ffffff);
-      color: #333;
+      margin:0;
+      color:var(--ink);
+      background: linear-gradient(110deg, var(--bg1), var(--bg2));
     }
-    h1 {
-      color: #007acc;
+    .wrap{
+      max-width: 980px;
+      margin: 40px auto 64px;
+      padding: 0 20px;
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
+    header h1{
+      margin:0 0 6px;
+      color:var(--accent);
+      letter-spacing:.3px;
     }
-    .section {
-      margin-bottom: 30px;
+    header p.lead{
+      margin:6px 0 0;
+      font-weight:600;
     }
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .section{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:20px;
+      margin-top:22px;
+      backdrop-filter: blur(4px);
+    }
+    h2{
+      margin:0 0 14px;
+    }
+    h3{
+      margin:18px 0 10px;
+      color:#0a5c8f;
+      font-size:1.05rem;
+    }
+    ul{margin:0 0 8px 18px}
+    li{margin:6px 0}
+    .grid-2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 24px;
+    }
+    @media (max-width: 720px){
+      .grid-2{grid-template-columns:1fr}
+    }
+    .meta-list{
+      list-style: none;
+      padding:0;
+      margin:0;
+    }
+    .meta-list li{margin:6px 0}
+    .badge{
+      display:inline-block;
+      padding:2px 8px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      font-size:.85rem;
+      margin:4px 6px 0 0;
+      background:#fff;
+    }
+    .subtle{opacity:.9}
   </style>
 </head>
 <body>
-  <h1>Saran Kumar Durgam</h1>
-  <p><strong>Senior Data Engineer | Azure, AWS, GCP | Databricks | Spark | Snowflake | Kafka | ETL </strong></p>
+  <div class="wrap">
+    <header>
+      <h1>Saran Kumar Durgam</h1>
+      <p class="lead"><strong>Senior Data Engineer | Azure, AWS, GCP | Databricks | Spark | Snowflake | Kafka | ETL</strong></p>
+    </header>
 
-  <div class="section">
-    <h2>📫 Contact</h2>
-    <ul>
-      <li>Email: sarandurgam9@gmail.com</li>
-      <li>Phone: (940) 290-2722</li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/saran-kumar-5795981b3" target="_blank">Profile</a></li>
-      <li>GitHub: <a href="https://github.com/sarandurgam" target="_blank">sarandurgam</a></li>
-    </ul>
-  </div>
+    <section class="section">
+      <h2>📫 Contact</h2>
+      <ul class="meta-list grid-2">
+        <li><strong>Email:</strong> <a href="mailto:sarandurgam9@gmail.com">sarandurgam9@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+19402902722">(940) 290-2722</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saran-kumar-5795981b3" target="_blank" rel="noopener">Profile</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/sarandurgam" target="_blank" rel="noopener">sarandurgam</a></li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>🚀 Summary</h2>
-    <p>
-      Experienced Senior Data Engineer with 9+ years of industry experience designing and implementing scalable 
-data solutions across multi-cloud environments (AWS, Azure, GCP). Proven track record in building robust 
-ETL/ELT pipelines using tools like Databricks, Airflow, Glue, Informatica, and ADF. Deep expertise in big data 
-ecosystems (Spark, Hadoop), modern data warehousing (Snowflake, Redshift, BigQuery), and advanced 
-analytics. Experienced in designing scalable data pipelines and medallion architectures using Azure Fabric, 
-Delta Lake, and Dataflows, supporting direct integration with Power BI and other enterprise BI platforms. 
-Demonstrated excellence in data governance, statistical analysis (regression, hypothesis testing), and 
-security compliance (HIPAA, GDPR), with a strong track record of collaboration in Agile environments. Strong 
-programming skills in Python, PySpark, and SQL.
-    </p>
-  </div>
+    <section class="section">
+      <h2>🚀 Summary</h2>
+      <p>
+        Experienced Senior Data Engineer with 9+ years of industry experience designing and implementing scalable
+        data solutions across multi-cloud environments (AWS, Azure, GCP). Proven track record in building robust
+        ETL/ELT pipelines using tools like Databricks, Airflow, Glue, Informatica, and ADF. Deep expertise in big data
+        ecosystems (Spark, Hadoop), modern data warehousing (Snowflake, Redshift, BigQuery), and advanced
+        analytics. Experienced in designing scalable data pipelines and medallion architectures using Azure Fabric,
+        Delta Lake, and Dataflows, supporting direct integration with Power BI and other enterprise BI platforms.
+        Demonstrated excellence in data governance, statistical analysis (regression, hypothesis testing), and
+        security compliance (HIPAA, GDPR), with a strong track record of collaboration in Agile environments. Strong
+        programming skills in Python, PySpark, and SQL.
+      </p>
+    </section>
 
-  <div class="section">
-    <h2>🛠 Skills</h2>
-    <ul>
-      <li>Languages: Python, SQL, PySpark, Scala, Shell Scripting </li>
-      <li>Big Data & Processing: Apache Spark (Core, SQL, Streaming), Hadoop (HDFS, MapReduce, Hive), Apache Flink, Apache Kafka (Kafka Streams, Kafka Connect), Apache Airflow, Apache Beam  </li>
-      <li>ETL Tools: AWS Glue, Informatica PowerCenter, Azure Data Factory (ADF), Talend, DBT (Data Build Tool), StreamSets, SSIS</li>
-      <li>Cloud Platforms: AWS (S3, Redshift, Lambda, EC2, RDS, IAM, CloudWatch, Bedrock, MWAA, Glue Catalog), Azure (ADF, Databricks, Azure Key Vault, ADLS Gen2, Azure ML, Azure DevOps), GCP (Pub/Sub, Dataflow,
-BigQuery) </li>
-      <li>Data Warehousing: Snowflake, Amazon Redshift, Google BigQuery, Teradata, Oracle, SQL Server, Delta Lake</li>
-      <li>Visualization: Tableau, Power BI, Excel (PivotTables, Macros), Matplotlib, Seaborn</li>
-      <li>CI/CD: Jenkins, GitHub Actions, Docker, Terraform</li>
-    </ul>
-  </div>
+    <section class="section">
+      <h2>🛠 Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, SQL, PySpark, Scala, Shell Scripting</li>
+        <li><strong>Big Data & Processing:</strong> Apache Spark (Core, SQL, Streaming), Hadoop (HDFS, MapReduce, Hive), Apache Flink, Apache Kafka (Kafka Streams, Kafka Connect), Apache Airflow, Apache Beam</li>
+        <li><strong>ETL Tools:</strong> AWS Glue, Informatica PowerCenter, Azure Data Factory (ADF), Talend, DBT (Data Build Tool), StreamSets, SSIS</li>
+        <li><strong>Cloud Platforms:</strong> AWS (S3, Redshift, Lambda, EC2, RDS, IAM, CloudWatch, Bedrock, MWAA, Glue Catalog), Azure (ADF, Databricks, Azure Key Vault, ADLS Gen2, Azure ML, Azure DevOps), GCP (Pub/Sub, Dataflow, BigQuery)</li>
+        <li><strong>Data Warehousing:</strong> Snowflake, Amazon Redshift, Google BigQuery, Teradata, Oracle, SQL Server, Delta Lake</li>
+        <li><strong>Visualization:</strong> Tableau, Power BI, Excel (PivotTables, Macros), Matplotlib, Seaborn</li>
+        <li><strong>CI/CD:</strong> Jenkins, GitHub Actions, Docker, Terraform</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>📜 Certifications </h2>
-    <ul>
-      <li>Databricks Academy Accreditation – Databricks Fundamentals</li>
-      <li>Power BI Essential Training – LinkedIn Learning</li>
-      <li>Google Cloud Platform – Foundational Infrastructure</li>
-      <li>Azure Data Fundamentals – Microsoft</li>
-    </ul>
-  </div>
+    <section class="section">
+      <h2>📜 Certifications</h2>
+      <span class="badge">Databricks Fundamentals (Academy Accreditation)</span>
+      <span class="badge">Power BI Essential Training</span>
+      <span class="badge">Google Cloud Foundations</span>
+      <span class="badge">Azure Data Fundamentals</span>
+    </section>
 
-  <div class="section">
-    <h2>📈 Experiences </h2>
-    <ul>
-      <li>Healthcare Data Platform with GenAI – Cigna</li>
-      <li>Cloud Migration – Cisco</li>
-      <li>Real-time Risk Analytics – Axis Bank</li>
-      <li>Retail Intelligence Hub – Landmark Group</li>
-      <li>ER Reporting – Citi Group</li>
-    </ul>
-  </div>
+    <section class="section">
+      <h2>📈 Experiences</h2>
+      <ul>
+        <li>Healthcare Data Platform with GenAI – Cigna</li>
+        <li>Cloud Migration – Cisco</li>
+        <li>Real-time Risk Analytics – Axis Bank</li>
+        <li>Retail Intelligence Hub – Landmark Group</li>
+        <li>ER Reporting – Citi Group</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>📄 Resume</h2>
-    <p><a href="https://github.com/sarandurgam/sarandurgam.github.io/blob/1ce913709075e53803d4a0d6a4ff19ebe16e8906/Saran_Dugam_SeniorDataEngineer.pdf" target="_blank">Download Resume (PDF)</a></p>
+    <!-- NEW: Roles & Responsibilities -->
+    <section class="section">
+      <h2>💼 Roles & Responsibilities</h2>
+
+      <h3>The Cigna Group — Intelligent Healthcare Data Platform (IHDP)</h3>
+      <ul>
+        <li>Built and configured AWS infrastructure (EC2, RDS, VPC, IAM, S3, CloudWatch) for secure, scalable operations.</li>
+        <li>Led ingestion of HL7/FHIR healthcare data via AWS Glue & Lambda, converting unstructured clinical feeds to analytics-ready formats.</li>
+        <li>Developed StreamSets pipelines integrating legacy systems/APIs with Snowflake; enabled schema evolution and high-throughput ingestion.</li>
+        <li>Designed modular ETL/ELT with Glue, Redshift, Snowflake, and DBT; implemented CI/CD using Jenkins & GitHub Actions.</li>
+        <li>Integrated GenAI using AWS Bedrock for summarization, document classification, and internal language generation use cases.</li>
+        <li>Implemented event-driven architecture with SNS/SQS/Lambda and secured REST APIs via API Gateway and Python services.</li>
+        <li>Enforced HIPAA/GDPR compliance: encryption, masking, least-privilege IAM, and auditable lineage with Glue Catalog & Unity Catalog.</li>
+      </ul>
+
+      <h3>Cisco Systems — Cloud Data Acceleration Platform (CDAP)</h3>
+      <ul>
+        <li>Engineered batch/streaming pipelines with DBT, PySpark, and AWS Glue to land curated data in Snowflake and Redshift.</li>
+        <li>Automated workflows & data quality checks using Apache Airflow DAGs; implemented CDC jobs for near real-time refreshes.</li>
+        <li>Optimized EMR/Spark clusters (compute sizing, partitioning, caching) for cost-effective, high-throughput processing.</li>
+        <li>Integrated DBT models with CI/CD (Jenkins, GitHub Actions) enabling automated tests, deployments, and rollbacks.</li>
+        <li>Built REST services with AWS Lambda & API Gateway; integrated with GraphQL (Hasura) for downstream consumption.</li>
+        <li>Modeled Snowflake (star/denormalized) and tuned warehouses/queries for BI performance and concurrency.</li>
+      </ul>
+
+      <h3>Axis Bank — Enterprise Data Lake Modernization</h3>
+      <ul>
+        <li>Designed Snowflake star schemas; standardized data contracts to improve query efficiency and maintainability.</li>
+        <li>Automated ETL orchestration via Azure Data Factory, Airflow, and Alteryx; enforced DQ rules and lineage tracking.</li>
+        <li>Processed large-scale data on Azure Databricks (Spark Scala/SQL); migrated Hive logic to Spark transformations.</li>
+        <li>Implemented Kafka Streams/Connect for real-time risk/compliance analytics and event-driven integrations.</li>
+        <li>Delivered KPI dashboards in Power BI; built ML pipelines (Azure ML, TensorFlow) for fraud scoring & churn prediction.</li>
+      </ul>
+
+      <h3>Landmark Group — Enterprise Retail Intelligence Hub (ERIH)</h3>
+      <ul>
+        <li>Built ETL with Informatica & GCP Dataflow; automated ingestion/transforms for sales, inventory, and customer behavior data.</li>
+        <li>Implemented streaming analytics with Pub/Sub & Apache Flink for online/POS event processing.</li>
+        <li>Modeled Snowflake warehouses for merchandising, demand forecasting, and promotion optimization.</li>
+        <li>Integrated ML (TensorFlow, scikit-learn) for recommendations, churn, and promo response prediction.</li>
+        <li>Hardened security with OAuth 2.0, encryption, and GDPR/PCI-DSS-aligned controls; added monitoring via New Relic.</li>
+      </ul>
+
+      <h3>Citibank — Enterprise Reporting</h3>
+      <ul>
+        <li>Developed high-volume Informatica ETL to Teradata; optimized with partitioning, indexing, and stats management.</li>
+        <li>Implemented SCD Type 1/2 for historical accuracy; authored advanced Teradata SQL, BTEQ, FastLoad/MultiLoad jobs.</li>
+        <li>Ingested raw files to Hadoop with PySpark; transformed and curated datasets into Hive for analytics.</li>
+        <li>Delivered Power BI dashboards for compliance/risk; automated schedules and recoveries with Control-M and UNIX scripts.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>📄 Resume</h2>
+      <p>
+        <a href="https://github.com/sarandurgam/sarandurgam.github.io/blob/1ce913709075e53803d4a0d6a4ff19ebe16e8906/Saran_Dugam_SeniorDataEngineer.pdf"
+           target="_blank" rel="noopener">Download Resume (PDF)</a>
+      </p>
+      <p class="subtle">Tip: host this PDF in your GitHub Pages repo and link to the <em>raw</em> file for a direct download.</p>
+    </section>
   </div>
 </body>
 </html>
-
-
-
-
-
